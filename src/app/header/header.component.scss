@@ -67,6 +67,9 @@
                         }
 
                         .dropdown-item{
+                            &:hover{
+                                background: transparent;
+                            }
                             .logo{
                                 width: 66px;
                                 height: 66px;
