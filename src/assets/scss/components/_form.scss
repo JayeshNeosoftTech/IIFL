@@ -1,0 +1,75 @@
+form{
+    position: relative;
+    width: 100%;
+    .form-outline{
+        position: relative;
+        margin-top: 24px;
+        .form-control{
+            padding: 16px;
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: $primary-black;
+            &:focus{
+                box-shadow: 0 0 0 rgb(145 158 171 / 32%);
+                border-color: rgb(145 158 171 / 32%);
+                ~.form-label{
+                    padding: 0 8px;
+                    top: -7px;
+                    background: #FFFFFF;
+                    font-size: 1.2rem;
+                }
+            }
+            &::placeholder{
+                color: transparent;
+            }
+        }
+        & > .form-control{
+            &:not(:placeholder-shown) ~ label{
+                padding: 0 8px;
+                top: -7px;
+                background: #FFFFFF;
+                font-size: 1.2rem;
+            }
+        }
+        .form-label {
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: #919EAB;
+            margin-bottom: 0;
+            position: absolute;
+            top: 0;
+            left: 16px;
+            padding: 16px 0;
+            transition: all 0.5s;
+        }
+        .eye-icon{
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+    .form-check-wrapper{
+        margin: 16px 0;
+
+        a{
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+    .form-check-input{
+        width: 24px;
+        height: 24px;
+        margin: 0 11px 0 0;
+        &:checked {
+            background-color: $orange;
+        }
+    }
+    .form-check-label{
+        font-size: 1.4rem;
+        font-weight: normal;
+        color: $primary-black;
+    }
+}

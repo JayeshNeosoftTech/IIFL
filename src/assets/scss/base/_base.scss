@@ -1,0 +1,28 @@
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  color: $primary-black;
+}
+
+.container-fluid {
+  background: #FFFFFF;
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 8px;
+}
+
+.main-content {
+  overflow-y: auto;
+}

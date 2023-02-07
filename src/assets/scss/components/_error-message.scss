@@ -1,0 +1,25 @@
+.error-msg{
+    width: 100%;
+    background-color: $bg-error;
+    border-radius: 8px;
+    padding: 14px 12px;
+    &__text{
+        width: 100%;
+        font-weight: normal;
+        font-size: 1.4rem;
+        color: #000D5C;
+        margin-left: 12px;
+    }
+}
+.error{
+    color: red;
+    margin-top: 5px;
+    font-size: 1.2rem; 
+    width: 100%;
+    &.show{
+        display: block;
+    }
+    &.hide{
+        display: none;
+    }
+}
