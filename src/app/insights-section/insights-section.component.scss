@@ -1,0 +1,78 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.insight-wrapper{
+    background: #F9FBFF;
+    padding-bottom: 70px;
+    .title{
+        margin: 180px auto 35px;
+        span{
+            font-weight: 300;
+        }
+    }
+    .carousel-insight{
+        width: 90%;
+        .carousel-inner{
+            display: flex;
+            gap: 30px;
+            padding-bottom: 15px;
+
+            &::after{
+                display: none;
+            }
+
+            .carousel-item{
+                box-shadow: 0px 4px 30px rgba(117, 116, 181, 0.2);
+                border-radius: 2px;
+                max-width: 280px;
+                margin-right: 0px;
+                .content{
+                    
+                    background: #FFFFFF;
+                    .header-img{
+                        width: 100%;
+                    }
+                    .text-content{
+                        padding: 25px 24px 25px 39px;
+                        h6{
+                            color: $orange;
+                        }
+                        .para{
+                            font-weight: normal;
+                            font-size: 1.5rem;
+                            line-height: 2.5rem;
+                            color: $grey;
+                        }
+                        .hash-tags{
+                            margin-top: 15px;
+                            gap: 10px;
+                            p{
+                                font-weight: normal;
+                                font-size: 1.4rem;
+                                line-height: 1.84rem;
+                            }
+                        }
+                        .read-details{
+                            p{
+                                font-size: 1.4rem;
+                                font-weight: normal;
+                                line-height: 2rem;
+                                color: $third-grey;
+                                .divider-line{
+                                    background-color: $third-grey;
+                                    width: 1px;
+                                    height: 14px;
+                                    display: inline-block;
+                                    margin: 0px 3px 0;
+                                    vertical-align: -2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .insight-btn{
+        margin-top: 40px;
+    }
+}
