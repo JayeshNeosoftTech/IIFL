@@ -1,0 +1,12 @@
+.select-field{
+    appearance: none;
+    background-image: url('../../images/icons/dropdown.png') !important;
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: 13px;
+    background-color: #FFFFFF;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
