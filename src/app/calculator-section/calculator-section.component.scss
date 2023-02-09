@@ -1,0 +1,175 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.cal-wrapper{
+    position: relative;
+    z-index: 0;
+    padding: 50px 0;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 423px;
+        width: 100%;
+        background: $linear-blue;
+        z-index: -1;
+    }
+
+    .com-title{
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+    .com-para{
+        color: #FFFFFF;
+    }
+
+    .cal-card{
+        margin-top: 56px;
+        width: 1220px;
+        background: #FFFFFF;
+        box-shadow: $card-shadow;
+        border-radius: 2px;
+        padding: 0 0 65px 0;
+        @include breakpoint(custom-desktop){
+            width: 100%;
+        }
+        .cal-tabs{
+            margin-top: 39px;
+            padding: 0 40px;
+            width: 100%;
+            .nav-tabs{
+                justify-content: center;
+                gap: 8.03%;
+                .nav-link{
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 2.133rem;
+                    color: $third-grey;
+                    padding-bottom: 25px;
+                    border: none;
+                    background: none;
+                    text-transform: uppercase;
+
+                    &.active{
+                        color: $primary-black;
+                        border-bottom: 3px solid $orange;
+                    }
+                }
+            }
+        }
+        .cal-tabcontent{
+            .tab-pane{
+                .content{
+                    &-first{
+                        margin: 40px 0;
+                        width: 522px;
+                    }
+                    .sub-title{
+                        font-size: 1.6rem;
+                        font-weight: normal;
+                        line-height: 2.2rem;
+                        color: $subtitle-grey;
+                    }
+                    .inputvalue{
+                        .btn{
+                            background: none;
+                            font-size: 2.4rem;
+                            line-height: 2.4rem;
+                            font-weight: 500;
+                            color: $primary-blue;
+                            &:focus{
+                                outline: none;
+                            }
+                            &:active{
+                                border-color: transparent;
+                            }
+                        }
+                        .input-field{
+                            padding: 8px 20px 8px 35px;
+                            background: rgba(239, 241, 244, 1);
+                            border: 4px;
+                            font-size: 2.4rem;
+                            font-weight: 500;
+                            line-height: 2.4rem;
+                            color: $primary-black;
+                            position: relative;
+                            width: 160px;
+                            &::-webkit-inner-spin-button{
+                                appearance: none;
+                            }
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        .currency{
+                            position: absolute;
+                            top: 12px;
+                            left: 18px;
+                            font-size: 2.4rem;
+                            line-height: 2.4rem;
+                            font-weight: 500;
+                            color: $primary-black;
+                        }
+                    }
+
+                    /* Progress bar */
+                    .progressbar-wrapper{
+                        margin-top: 15px;
+                        display: flex;
+                        align-items: center;
+                        height: 30px;
+                        .loan-progress {
+                            position: relative;
+                            z-index: 5;
+                            background: rgba(188, 188, 188, 1);
+                            border-radius: 0px;
+                            display: inline-block;
+                            cursor: pointer;
+                            width: 100%;
+                            max-width: 100%;
+                            height: 4px;
+                            .loanprogress-bar{
+                                width: 100%;
+                                max-width: 100%;
+                                height: 4px;
+                            }
+                            &.aqua{
+                                .loanprogress-bar{
+                                    background: linear-gradient(90deg, #1e1c57 -9.09%, #2e5dc0 50%);
+                                }
+                            }
+                            .loanprogress-bar {
+                                /* width: 100%;
+                                max-width: 100%; */
+                                width: 10%;
+                                height: 4px;
+                                position: relative;
+                                z-index: 10;
+                                border-radius: 0px;
+                                -moz-transition: width linear 0.2s;
+                                -webkit-transition: width linear 0.2s;
+                                -o-transition: width linear 0.2s;
+                                transition: width linear 0.2s;
+                                
+                                .dot {
+                                    width: 30px;
+                                    height: 30px;
+                                    background: rgba(46, 93, 192, 1);
+                                    position: absolute;
+                                    top: -13px;
+                                    right: -28px;
+                                    border-radius: 100%;
+                                    .inner-dot {
+                                        width: 21px;
+                                        height: 21px;
+                                        border-radius: 100%;
+                                        background: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

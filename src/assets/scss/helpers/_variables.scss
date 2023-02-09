@@ -4,6 +4,7 @@ $primary-font: 'Roboto';
 $primary-black: rgba(79, 83, 97, 1);
 $orange: rgba(245, 110, 40, 1);
 $light-orange: rgba(251, 194, 155, 1);
+$primary-blue: rgba(0, 88, 153, 1);
 
 $footer-text:rgba(236, 236, 236, 1);
 $select-text: #343F49; 
@@ -13,19 +14,22 @@ $nav-text: rgba(30, 28, 87, 1);
 $grey: rgba(128, 128, 128, 1);
 $second-grey: #909CAA;
 $third-grey: rgba(180, 193, 208, 1);
-
-
+$subtitle-grey: rgba(112, 127, 144, 1);
   
 /* background color */
 $bg-error: #D0F2FF;
 $bg-orange: rgba(245, 110, 40, 1);
+$bg-blue: rgba(30, 28, 87, 1);
 
 /* Linear bg color */
 $linear-orange: linear-gradient(250.21deg, #FFDCCA 21.8%, rgba(255, 254, 235, 0.84) 91.69%);
-
+$linear-blue: linear-gradient(to top, rgb(30, 28, 87),rgba(23, 63, 149, 1));
 
 /* button hover color */
-$purple-500: #4355cbe2;
+$btn-hover: rgba(245, 110, 40, 0.8);
 
 /* border */
 $border-primary: 1px solid rgba(145, 158, 171, 0.32);
+
+/* shadow */
+$card-shadow: 0px 4px 30px rgba(117, 116, 181, 0.2);

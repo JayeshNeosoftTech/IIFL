@@ -18,6 +18,13 @@ body {
   background: #FFFFFF;
   height: 100vh;
 }
+.custom-container{
+  max-width: 1220px;
+  margin: 0 auto;
+  @include breakpoint(custom-desktop){
+    padding: 0 20px;
+  }
+}
 
 .title {
   margin-bottom: 8px;

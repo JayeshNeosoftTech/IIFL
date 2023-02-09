@@ -6,6 +6,9 @@
     font-weight: 500;
     color: #FFFFFF;
     border: none;
+    &:hover{
+        background: $btn-hover;
+    }
 }
 .signin-btn{
     width: 152px;
@@ -22,4 +25,9 @@
     background: transparent;
     border: 1px solid $orange;
     color: $orange;
+    box-shadow: none;
+    &:hover{
+        background: $orange;
+        color: #FFFFFF;
+    }
 }

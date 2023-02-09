@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { BannerComponent } from './banner/banner.component';
 import { CustomerSupportComponent } from './customer-support/customer-support.component';
 import { InsightsSectionComponent } from './insights-section/insights-section.component';
+import { CalculatorSectionComponent } from './calculator-section/calculator-section.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InsightsSectionComponent } from './insights-section/insights-section.co
     HomePageComponent,
     BannerComponent,
     CustomerSupportComponent,
-    InsightsSectionComponent
+    InsightsSectionComponent,
+    CalculatorSectionComponent
   ],
   imports: [
     BrowserModule,
