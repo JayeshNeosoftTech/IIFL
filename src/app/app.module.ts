@@ -9,6 +9,9 @@ import { BannerComponent } from './banner/banner.component';
 import { CustomerSupportComponent } from './customer-support/customer-support.component';
 import { InsightsSectionComponent } from './insights-section/insights-section.component';
 import { CalculatorSectionComponent } from './calculator-section/calculator-section.component';
+import { FooterComponent } from './footer/footer.component';
+import { QuicklinkSectionComponent } from './quicklink-section/quicklink-section.component';
+import { FooterLinksComponent } from './footer-links/footer-links.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { CalculatorSectionComponent } from './calculator-section/calculator-sect
     BannerComponent,
     CustomerSupportComponent,
     InsightsSectionComponent,
-    CalculatorSectionComponent
+    CalculatorSectionComponent,
+    FooterComponent,
+    QuicklinkSectionComponent,
+    FooterLinksComponent
   ],
   imports: [
     BrowserModule,

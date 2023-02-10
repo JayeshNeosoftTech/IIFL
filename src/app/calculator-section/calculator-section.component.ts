@@ -86,7 +86,7 @@ export class CalculatorSectionComponent {
   }
 
   clicked(index:any){
-    console.log(this.loan_li[index]);
+    console.log(index);
     this.imgpath=this.loan_li[index].imgurl;
     this.selectedfield= this.loan_li[index].options;
   }

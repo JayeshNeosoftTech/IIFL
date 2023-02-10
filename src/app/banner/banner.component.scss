@@ -41,12 +41,16 @@
         }
     }
     .carousel-indicators{
-        left: 7.5%;
+        /* left: 7.5%;
         right: auto;
         margin-left: 0;
-        bottom: 65px;
+        bottom: 65px; */
+        position: static;
         height: 0;
         border-radius: 100%;
+        max-width: 1220px;
+        margin: -40px auto 0;
+        justify-content: flex-start;
         button{
             width: 5px;
             height: 5px;

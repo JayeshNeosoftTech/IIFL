@@ -1,0 +1,39 @@
+@import "../../assets/scss/helpers/_helper-dir";
+.quicklink-wrapper{
+    width: 100%;
+    background: $bg-light-black;
+    padding: 20px 0;
+    .quicklink-content{
+        width: 100%;
+        gap: 20px;
+        h6{
+            color: #FFFFFF;
+        }
+        .links{
+            gap: 25px;
+            a{
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                font-weight: normal;
+                color: rgba(253, 253, 253, 0.5);
+                position: relative;
+                text-decoration: none;
+                &:hover{
+                    color: #FFFFFF;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 6px;
+                    right: -12px;
+                    width: 1px;
+                    height: 12px;
+                    background: rgba(253, 253, 253, 0.5);
+                }
+                &:last-child::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}
