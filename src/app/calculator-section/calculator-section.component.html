@@ -5,10 +5,13 @@
             Calculate your EMI and choose the most suitable product for you
         </p>
         <div class="cal-card d-flex flex-column align-items-center">
-            <select name="loan" id="loan" class="select-field">
-                <option value="homeloan">Home Loan</option>
-                <option value="homeloan">Personal Loan</option>
-            </select>
+            <!-- custom select field -->
+            <div class="loanselect-field d-flex align-items-center" (click)="ulshowhide()">
+                <p class="selected-data"><img src="{{imgpath}}" alt="">{{selectedfield}}</p>
+                <ul class="options" [ngClass]="loanselect_val ? 'show' : 'hide'">
+                    <li *ngFor="let i of loan_li; let opt_index=index;" (click)="clicked(opt_index)"><img src="{{i.imgurl}}" alt="home">{{i.options}}</li>
+                </ul>
+            </div>
 
             <!-- tabs code -->
             <nav class="cal-tabs">
@@ -30,38 +33,53 @@
                         <div class="d-flex justify-content-between align-items-baseline">
                             <p class="sub-title">I need a personal loan of</p>
                             <div class="inputvalue d-flex flex-nowrap">
-                                <button class="btn">-</button>
+                                <button class="btn" (click)="decreaseLoan()">-</button>
                                 <div class="position-relative">
-                                    <input type="number" [value]="loan_value" placeholder="" class="input-field"/>
+                                    <input type="number" [value]="loanvalue" placeholder="" class="input-field"/>
                                     <p class="currency">&#8377;</p>
                                 </div>
-                                <button class="btn">+</button>
+                                <button class="btn" (click)="increaseLoan()">+</button>
                             </div>
                         </div>
-
-                        <!-- progressbar code -->
-                        <div class="progressbar-wrapper">
-                            <div class="loan-progress aqua"
-                            [attr.data-width]="progress"
-                            (mousedown)="startUpdateSlider(data)"
-                            (mouseup)="endUpdateSlider(data)"
-                            (mouseleave)="endUpdateSlider(data)"
-                            (mousemove)="updateSlider($event, data)"
-                            >
-                                <div class="loanprogress-bar" [style.width]="progress">
-                                    <div class="dot d-flex justify-content-center align-items-center">
-                                        <div class="inner-dot"></div>
+                        <div>
+                            <!-- progressbar code -->
+                            <div class="progressbar-wrapper">
+                                <div class="loan-progress aqua"
+                                [attr.data-width]="progress"
+                                (mousedown)="startUpdateSlider(data)"
+                                (mouseup)="endUpdateSlider(data)"
+                                (mouseleave)="endUpdateSlider(data)"
+                                (mousemove)="updateSlider($event, data)"
+                                >
+                                    <div class="loanprogress-bar" [style.width]="progress">
+                                        <div class="dot d-flex justify-content-center align-items-center">
+                                            <div class="inner-dot"></div>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="breakpoints position-absolute d-flex justify-content-between">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!-- loan limit text -->
+                            <div class="d-flex justify-content-between progressbar-caption">
+                                <p>&#8377; 2L</p>
+                                <p>&#8377; 25L</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    XYZ
+                    <h4 class="my-5">Comming Soon</h4>
                 </div>
                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    kkb
+                    <h4 class="my-5">Comming Soon</h4>
                 </div>
             </div>
 

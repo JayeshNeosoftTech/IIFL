@@ -32,6 +32,72 @@
         @include breakpoint(custom-desktop){
             width: 100%;
         }
+        .select-field{
+            width: 280px;
+            height: 56px;
+            border-radius: 30px;
+            background-color: #FFFFFF;
+            box-shadow: $card-shadow;
+            font-size: 1.4rem;
+            line-height: 1.64rem;
+            padding: 0 42px 0 56px;
+            margin-top: -30px;
+        }
+        .loanselect-field{
+            margin-top: -30px;
+            width: 280px;
+            height: 56px;
+            border-radius: 30px;
+            background-color: #FFFFFF;
+            box-shadow: $card-shadow;
+            font-size: 1.4rem;
+            line-height: 1.64rem;
+            position: relative;
+            background-image: url('../../assets/images/icons/dropdown.png');
+            background-position: 90%;
+            background-repeat: no-repeat;
+            background-size: 13px;
+            .selected-data{
+                padding: 0 42px 0 25px;
+                width: 100%;
+                font-size: 1.4rem;
+                line-height: 1.64rem;
+                color: $primary-black;
+                img{
+                    vertical-align: baseline;
+                    margin-right: 12px;
+                }
+            }
+            .options{
+                z-index: 6;
+                position: absolute;
+                top: 59px;
+                width: 100%;
+                font-size: 1.4rem;
+                line-height: 1.64rem;
+                list-style: none;
+                background: #FFFFFF;
+                padding: 5px 0;
+                box-shadow: $card-shadow;
+                &.show{
+                    display: block;
+                }
+                &.hide{
+                    display: none;
+                }
+                li{
+                    padding: 5px 10px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $light-orange;
+                    }
+                    img{
+                        vertical-align: baseline;
+                        margin-right: 12px;
+                    }
+                }
+            }
+        }
         .cal-tabs{
             margin-top: 39px;
             padding: 0 40px;
@@ -117,6 +183,7 @@
                         display: flex;
                         align-items: center;
                         height: 30px;
+                        position: relative;
                         .loan-progress {
                             position: relative;
                             z-index: 5;
@@ -145,10 +212,7 @@
                                 position: relative;
                                 z-index: 10;
                                 border-radius: 0px;
-                                -moz-transition: width linear 0.2s;
-                                -webkit-transition: width linear 0.2s;
-                                -o-transition: width linear 0.2s;
-                                transition: width linear 0.2s;
+                                transition: width 0.5s linear;
                                 
                                 .dot {
                                     width: 30px;
@@ -166,6 +230,29 @@
                                     }
                                 }
                             }
+                        }
+                        .breakpoints{
+                            top: 10px;
+                            left: 0;
+                            width: 100%;
+                            span{
+                                width: 1px;
+                                height: 12px;
+                                background: rgba(206, 206, 206, 1);
+                                &:first-child{
+                                    height: 15px;
+                                }
+                                &:last-child{
+                                    height: 15px;
+                                }
+                            }
+                        }
+                    }
+                    .progressbar-caption{
+                        p{
+                            font-size: 1.2rem;
+                            line-height: 1.68rem;
+                            color: $third-grey;
                         }
                     }
                 }
