@@ -1,0 +1,18 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.contactus{
+    h6{
+        color: $footer-text;
+    }
+    .smedia-wrapper{
+        gap: 18px;
+        .nav-link{
+            &:first-child{
+                opacity: 0.5;
+            }
+            &:nth-child(2){
+                opacity: 0.5;
+            }
+        }
+    }
+}

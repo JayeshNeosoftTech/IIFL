@@ -1,0 +1,52 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.footer-content__wrapper{
+    border: 1px solid rgba(196, 196, 196, 0.1);
+    border-left: none;
+    border-right: none;
+
+    .content{
+        padding-bottom: 20px;
+        &__left{
+            width: 80%;
+        }
+        &__right{
+            flex-grow: 1;
+            padding: 57px 0 0 20px;
+            .contactus-wrapper{
+                margin-top: 50px;
+            }
+        }
+        &__bottom{
+            background: $bg-light-black;
+            padding: 37px 0 39px;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            font-weight: normal;
+            color: $footer-grey;
+            .links{
+                gap: 20px;
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: $footer-grey;
+                    &:hover{
+                        color: #FFFFFF;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 3px;
+                        right: -10px;
+                        width: 1px;
+                        height: 12px;
+                        background: $footer-grey;
+                    }
+                    &:last-child::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

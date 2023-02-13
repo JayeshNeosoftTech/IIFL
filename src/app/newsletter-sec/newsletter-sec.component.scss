@@ -1,0 +1,46 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.newsletter-wrapper{
+    h6{
+        color: $footer-text;
+        margin-bottom: 20px;
+    }
+    .heading{
+        font-size: 2.2rem;
+        font-weight: 3rem;
+        color: rgba(255, 255, 255, 0.6);
+        white-space: pre-wrap;
+        margin-bottom: 30px;
+    }
+    .email_wrapper{
+        background: $bg-black-email;
+        border-radius: 80px;
+        max-width: 281px;
+        height: 56px;
+        .input-field{
+            background: transparent;
+            text-align: center;
+            flex-grow: 1;
+            font-size: 1.4rem;
+            color: $footer-text;
+            border: transparent;
+            padding: 0 15px;
+            &:focus{
+                outline: none;
+            }
+            &::placeholder{
+                color: $footer-grey;
+            }
+        }
+        button{
+            background: transparent;
+            padding-right: 20px;
+            &:focus{
+                outline: none;
+            }
+            &:active{
+                border: none;
+            }
+        }
+    }
+}

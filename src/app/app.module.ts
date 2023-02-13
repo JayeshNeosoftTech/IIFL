@@ -12,6 +12,9 @@ import { CalculatorSectionComponent } from './calculator-section/calculator-sect
 import { FooterComponent } from './footer/footer.component';
 import { QuicklinkSectionComponent } from './quicklink-section/quicklink-section.component';
 import { FooterLinksComponent } from './footer-links/footer-links.component';
+import { NewsletterSecComponent } from './newsletter-sec/newsletter-sec.component';
+import { ContactusSecComponent } from './contactus-sec/contactus-sec.component';
+import { CustomerSecComponent } from './customer-sec/customer-sec.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { FooterLinksComponent } from './footer-links/footer-links.component';
     CalculatorSectionComponent,
     FooterComponent,
     QuicklinkSectionComponent,
-    FooterLinksComponent
+    FooterLinksComponent,
+    NewsletterSecComponent,
+    ContactusSecComponent,
+    CustomerSecComponent
   ],
   imports: [
     BrowserModule,
