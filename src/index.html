@@ -8,7 +8,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 <body>
   <app-root></app-root>
@@ -19,16 +19,24 @@
 
 <script>
   $(document).ready(function () {
-      $(".owl-carousel.slide_1").owlCarousel({
+      $(".owl-carousel.custom-slider").owlCarousel({
           items:3,
-          loop:true,
           nav:true,
+          navText: ['<img src="../../assets/images/icons/serachArrow-icon.svg" alt=""/>',
+                    '<img src="../../assets/images/icons/serachArrow-icon.svg" alt=""/>'],
           dots:false,
           autoplay: false,
-          autoplaySpeed:1000,
           center: true,
+          loop:true,
+          autoplaySpeed:1000,
           smartSpeed:1500,
-          autoplayHoverPause: true
+          autoplayHoverPause: true,
+          Infinity: true,
+          responsive:{
+              0:{
+                  items:3
+              }
+          }
       });
   });
 </script>
