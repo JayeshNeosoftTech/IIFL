@@ -18,6 +18,7 @@ import { FooterLinksComponent } from './footer-links/footer-links.component';
 import { NewsletterSecComponent } from './newsletter-sec/newsletter-sec.component';
 import { ContactusSecComponent } from './contactus-sec/contactus-sec.component';
 import { CustomerSecComponent } from './customer-sec/customer-sec.component';
+import { MobileAppSecComponent } from './mobile-app-sec/mobile-app-sec.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CustomerSecComponent } from './customer-sec/customer-sec.component';
     FooterLinksComponent,
     NewsletterSecComponent,
     ContactusSecComponent,
-    CustomerSecComponent
+    CustomerSecComponent,
+    MobileAppSecComponent
   ],
   imports: [
     BrowserModule,
