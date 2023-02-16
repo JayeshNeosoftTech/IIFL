@@ -19,6 +19,8 @@ import { NewsletterSecComponent } from './newsletter-sec/newsletter-sec.componen
 import { ContactusSecComponent } from './contactus-sec/contactus-sec.component';
 import { CustomerSecComponent } from './customer-sec/customer-sec.component';
 import { MobileAppSecComponent } from './mobile-app-sec/mobile-app-sec.component';
+import { MoreofferSecComponent } from './moreoffer-sec/moreoffer-sec.component';
+import { OfferingSecComponent } from './offering-sec/offering-sec.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MobileAppSecComponent } from './mobile-app-sec/mobile-app-sec.component
     NewsletterSecComponent,
     ContactusSecComponent,
     CustomerSecComponent,
-    MobileAppSecComponent
+    MobileAppSecComponent,
+    MoreofferSecComponent,
+    OfferingSecComponent
   ],
   imports: [
     BrowserModule,

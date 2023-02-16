@@ -1,3 +1,5 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
 .carousel{
     height: 496px;
     .plans-wrapper{
@@ -41,16 +43,18 @@
         }
     }
     .carousel-indicators{
-        /* left: 7.5%;
-        right: auto;
-        margin-left: 0;
-        bottom: 65px; */
         position: static;
-        height: 0;
+        height: fit-content;
         border-radius: 100%;
         max-width: 1220px;
         margin: -40px auto 0;
         justify-content: flex-start;
+        & .active{
+            opacity: 0.9;
+        }
+        @include breakpoint(custom-desktop){
+            padding: 0 20px;
+        }
         button{
             width: 5px;
             height: 5px;

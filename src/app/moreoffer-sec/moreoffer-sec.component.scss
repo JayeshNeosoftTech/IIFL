@@ -1,0 +1,81 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.moreoffer-wrapper{
+    width: 100%;
+    padding: 70px 0;
+    background: $linear-orange;
+
+    .slider-wrapper{
+        margin-left: 102px;
+        margin-top: 28px;
+        gap: 30px;
+    }
+    .loan-card{
+        max-width: 282px;
+        height: auto;
+        padding: 43px 40px 0;
+        background: #FFFFFF;
+        border-radius: 2px;
+        box-shadow: $card-shadow;
+        cursor: pointer;
+        &:hover{
+            background: $linear-card-hover;
+            scale: 1.1;
+            transition: all 0.2s;
+            h6, h3, .subheading, .com-para, .number-text{
+                color: #FFFFFF;
+            }
+            .com-para{
+                border-top-color: rgba(255, 255, 255, 0.6);
+            }
+            .arrow-img{
+                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7443%) hue-rotate(48deg) brightness(112%) contrast(94%);
+                width: 30px;
+            }
+        }
+
+        h6{
+            color: $orange;
+        }
+        .number-text{
+            font-size: 6rem;
+            line-height: 6rem;
+            font-weight: 500;
+            span{
+                font-size: 3rem;
+                line-height: 3rem;
+            }
+
+            &~h3{
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+            }
+        }
+        .subheading{
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            margin: 5px 0 16px 0;
+        }
+        .com-para{
+            border-top: $border-grey;
+            padding: 14px 0;
+            color: $subtitle-grey;
+        }
+        .arrow-img{
+            width: 27px;
+        }
+        &__img{
+            &.personalloan-img{
+                margin-top: -33px;
+            }
+            .SME-img{
+                width: fit-content;
+                margin-left: -36px;
+                margin-top: -55px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
