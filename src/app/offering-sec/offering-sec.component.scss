@@ -1,0 +1,34 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.offering-wrapper{
+    width: 100%;
+    padding: 70px 0;
+    background: $bg-light-white;
+    &__content{
+
+        .slider-wrapper{
+            margin-left: 102px;
+            margin-top: 48px;
+            gap: 32px;
+        }
+        .offerloan-card{
+            min-width: 280px;
+            height: auto;
+            background: #FFFFFF;
+            border-radius: 2px;
+            box-shadow: $card-shadow;
+            padding: 45px 32px 0;
+            cursor: pointer;
+
+            h6{
+                color: $orange;
+            }
+            h3{
+                width: 190px;
+            }
+            .arrow-img{
+                margin-top: 10px;
+            }
+        }
+    }
+}
