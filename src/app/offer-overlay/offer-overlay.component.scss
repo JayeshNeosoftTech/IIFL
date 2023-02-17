@@ -1,0 +1,60 @@
+@import "../../assets/scss/helpers/_helper-dir";
+
+.offer-overlay{
+    padding: 44px 40px 31px;
+    background: $linear-orange-overlay;
+    width: 100%;
+    height: 100%;
+
+    h6{
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+    .select-field{
+        color: #FFFFFF;
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+        background-color: transparent;
+        padding-right: 20px;
+        position: relative;
+        background-image: url('../../assets/images/icons/dropdown-white.svg') !important;
+        background-position: 100%;
+
+        option{
+            color: $primary-black;
+        }
+    }
+    &__form{
+        margin-top: 16px;
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        color: #FFFFFF;
+        input[type='text']{
+            width: 100%;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            padding-bottom: 5px;
+            margin-bottom: 25px;
+            color: #FFFFFF;
+            
+            &::marker{
+                color: #FFFFFF;
+            }
+            &::placeholder{
+                color: rgba(255, 255, 255, 0.8);
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        button[type='submit']{
+            width: 178px;
+            height: 50px;
+            border: 1px solid #FFFFFF;
+            border-radius: 80px;
+            color: $orange;
+            font-weight: 700;
+        }
+    }
+}

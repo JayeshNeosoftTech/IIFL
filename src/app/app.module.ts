@@ -21,6 +21,7 @@ import { CustomerSecComponent } from './customer-sec/customer-sec.component';
 import { MobileAppSecComponent } from './mobile-app-sec/mobile-app-sec.component';
 import { MoreofferSecComponent } from './moreoffer-sec/moreoffer-sec.component';
 import { OfferingSecComponent } from './offering-sec/offering-sec.component';
+import { OfferOverlayComponent } from './offer-overlay/offer-overlay.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { OfferingSecComponent } from './offering-sec/offering-sec.component';
     CustomerSecComponent,
     MobileAppSecComponent,
     MoreofferSecComponent,
-    OfferingSecComponent
+    OfferingSecComponent,
+    OfferOverlayComponent
   ],
   imports: [
     BrowserModule,

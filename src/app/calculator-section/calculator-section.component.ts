@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculator-section.component.scss']
 })
 export class CalculatorSectionComponent {
+  sliderValue=[30, 70];
+
   progress = '40%';
   data:any;
 
